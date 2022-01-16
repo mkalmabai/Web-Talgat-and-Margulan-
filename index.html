@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OPTICA</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="img/55.png">
+  </head>
+  
+
+  <header>
+  
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><img src="img/12.png"></span>
+    </div>
+  
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Магазин</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Связаться</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">О НАС</a>
+    </div>
+  
+  </header>
+
+  
+
+  <div id="top">
+    <h1>Ищите себе подходящие очки?</h1>
+    <h3>Мы поможем!</h3>
+  </div>
+
+
+  
+  <div id="main">
+    <div class="intro">
+      <h2>Наши услуги помогут вам!</h2>
+      <span>Самый большой выбор очков только у TM OPTIC</span>
+    </div>
+    
+    <div class="text">
+      <span>ПОЛУЧИТЕ ХОРОШЕЕ ЗРЕНИЕ
+            ЗА 6990 ₸
+            УЖЕ ЧЕРЕЗ 48 ЧАСОВ ОТ КАЗАХСТАНСКОГО БРЕНДА</span>
+    </div>
+  </div>
+
+  
+
+ 
+
+  <div id="overview">
+    <h2>Магазин</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <img src="https://avatars.mds.yandex.net/i?id=cd211526d78eff3b82ed83591c7ce2b5-5150784-images-thumbs&n=13" alt="">
+      <span>Закажи примерку очков на дом</span>
+    </div>
+    
+    <div class="img">
+      <img src="https://avatars.mds.yandex.net/i?id=f9c26206d711c8f339aeed59b25c0dc7-5279616-images-thumbs&n=13" alt="">
+      <span>Закажи доставку контактных линз</span>
+    </div>
+  </div>
+
+  
+
+
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+        <label for="name">Имя <span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта <span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение <span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  
+
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Скоро будет когда доделаем Скоро будет когда доделаем Скоро будет когда доделаем Скоро будет когда доделаем</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Скоро будет когда доделаем Скоро будет когда доделаем Скоро будет когда доделаем Скоро будет когда доделаем</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Скоро будет когда доделаем Скоро будет когда доделаем Скоро будет когда доделаем Скоро будет когда доделаем</p>
+    </div>
+  </div>
+
+  
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+  
+
+
+  </body>
+</html>
